@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>COMP 125</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./a4css.css">
+<!--
+	Assignment 4
+		Authors:
+				Sean Morden
+					Student#:300490950
+				Nasrin Mumtaz
+					Student#:301034996
+		Date: March 4,2019
+		File name:index.html
+-->
+</head>
+
+<body>
+	<header>
+	<h1 class="red">Apply Online</h1>
+	</header>
+
+		<p></p>
+		<p>Ready to take the next step toward achieving your goals? <br>Please fill out the application below and we will contact you about the next steps in your admissions process.</p>
+	
+	<form name="form" action="./result.html" novalidate="novalidate">
+		<fieldset>
+		
+		<div class="row">
+		<div class="column">
+			<label for="fName"><a class="red">*</a>First Name</label><br>
+				<input type="text" name="firstName" id="fName" placeholder="John">
+					<p id="fNameError" class="errorMsg"></p><br><br>
+			<label for="gender"><a class="red">*</a>Gender</label><br>
+				<select name="gender" id="genderList" >
+				<option value="0">Select</option>
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+				<option value="3">Undefined</option>
+				</select>
+					<p id="genderError" class="errorMsg"></p><br><br>
+			<label class="country"><a class="red">*</a>Country</label><br>
+				<input type="text" name="country" id="country" required="required" placeholder="Canada">
+					<p id="countryError" class="errorMsg"></p><br><br>
+			<label class="password"><a class="red">*</a>Password</label><br>
+				<input type="password" name="password" id="pw1" required="required" placeholder="Enter Password">
+					<p id="passwordError" class="errorMsg"></p><br><br>
+			<label class="city"><a class="red">*</a>City</label><br>
+				<input type="text" name="city" id="city" required="required" placeholder="Toronto">
+					<p id="cityError" class="errorMsg"></p><br><br>
+			<label class="email"><a class="red">*</a>E-Mail</label><br>
+				<input type="email" name="email" id="email" required="required" placeholder="johndoe@johndoes.ca">
+					<p id="emailError" class="errorMsg"></p><br><br>
+			<label class="pEdu"><a class="red">*</a>Level of Previous Education</label><br>
+				<select name="pEdu" id="pEduList">
+				<option value="0">
+				<option value="1">Some High School
+				<option value="2">High School
+				<option value="3">College/University
+				</select>
+					<p id="pEduError" class="errorMsg"></p><br><br>
+			<label class="pCampus"><a class="red">*</a>Preferred Campus</label><br>
+				<select name="pCampus" id="pCampusList">
+				<option value="0">
+				<option value="1">Ashtonbee Campus
+				<option value="2">Morningside Campus
+				<option value="3">Progress Campus
+				<option value="4">Story Arts Centre
+				</select>
+					<p id="pCampusError" class="errorMsg"></p><br><br>
+			<label class="about">How did you hear about us?</label><br>
+				<select name="about" id="aboutList">
+				<option id="abouto1">
+				<option id="abouto2">Career Fair
+				<option id="abouto3">Internet
+				<option id="abouto4">Friend/Family
+				<option id="abouto5">Other
+				</select>
+					<br><br>
+		</div>
+		<div class="column">
+			<label for="lName"><a class="red">*</a>Last Name</label><br>
+				<input type="text" name="lName" id="lName" required="required" placeholder="Doe">
+					<p id="lNameError" class="errorMsg"></p><br><br>
+			<label for="street"><a class="red">*</a>Street Address</label><br>
+				<input type="text" name="street" id="street" required="required" placeholder="ex. 935 Progress ave.">
+					<p id="streetError" class="errorMsg"></p><br><br>
+			<label class="pcode"><a class="red">*</a>Postal Code</label><br>
+				<input type="text" name="pcode" id="pcode" required="required" placeholder="L1M1K6">
+					<p id="pcodeError" class="errorMsg"></p><br><br>
+			<label class="cpassword"><a class="red">*</a>Confirm Password</label><br>
+				<input type="password" name="cpassword" id="pw2" required="required" placeholder="Enter Password">
+					<p id="cpasswordError" class="errorMsg"></p><br><br>
+			<label class="prov"><a class="red">*</a>Province</label><br>
+				<input type="text" name="prov" id="prov" required="required" placeholder="Ontario">
+					<p id="provError" class="errorMsg"></p><br><br>
+			<label class="phone"><a class="red">*</a>Phone Number</label><br>
+				<input type="text" name="phone" id="phone" required="required" placeholder="416556666">
+					<p id="phoneError" class="errorMsg"></p><br><br>
+			<label class="work"><a class="red">*</a>Are you currently working?</label><br>
+				<select name="work" id="workList">
+				<option value="0"></option>
+				<option value="1">Yes</option>
+				<option value="2">No</option>
+				</select>
+					<p id="workError" class="errorMsg"></p><br><br>
+			<label class="program"><a class="red">*</a>Program of interest</label><br>
+				<input type="text" name="program" id="prog"placeholder="Software Engineering">
+					<p id="progError" class="errorMsg"></p><br><br>
+		</div>
+	</div>
+	</fieldset>
+	<p><a class="red">*</a>= Required Fields</p>
+	<input type="submit" id="applybtn" value="Apply"/>
+	</form>
+	
+	<script src="a4.js"></script>
+</body>
+
+</html>
