@@ -1,0 +1,26 @@
+﻿@model ReviewRecipe
+@{
+    ViewBag.Title = "Review Recipe";
+    ViewBag.Header = "Review Recipe";
+}
+
+<form asp-action="ReviewRecipe" method="post">
+    <table>
+        <tr>
+            <td>
+                Title:
+            </td>
+            <td>
+                @Model.Title
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Title:
+            </td>
+            <td>
+                @Model.Review
+            </td>
+        </tr>
+    </table>
+</form>

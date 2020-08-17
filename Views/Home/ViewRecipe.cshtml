@@ -1,0 +1,10 @@
+﻿@model Recipe
+@{
+    //ViewBag.Title = "View Recipe" + Model.RecipeName;
+    ViewBag.Header = Model.RecipeName;
+}
+<form>
+    @await Html.PartialAsync("PartialRecipe", Model)
+
+    <a class="btn btn-outline-dark" asp-controller="Home" asp-action="ReviewRecipe" asp-route-id="Model.IdNumber">Review Recipe</a>
+</form>

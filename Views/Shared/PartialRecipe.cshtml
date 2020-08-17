@@ -1,0 +1,36 @@
+﻿@model Recipe
+
+    <table>
+        <tr>
+            <td>
+                Recipe Name:
+            </td>
+            <td>
+                <input asp-for="RecipeName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Description:
+            </td>
+            <td>
+                <textarea input class="textbox" asp-for="Description"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ingredients:
+            </td>
+            <td>
+                <textarea input class="textbox" asp-for="Ingredients"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Instructions:
+            </td>
+            <td>
+                <textarea input class="textbox" asp-for="Instructions"></textarea>
+            </td>
+        </tr>
+    </table>

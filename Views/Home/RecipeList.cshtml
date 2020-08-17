@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Recipe>
+@{
+    ViewBag.Title = "Recipe List";
+    ViewBag.Header = "Recipe List";
+}
+<table class="table table-sm table-striped table-bordered table-warning table-hover">
+    <thead>
+        <tr>
+            <th>Recipe Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+        <tr>
+            <td>
+                <a asp-controller="Admin" asp-action="Edit" asp-route-recipeid="@r.RecipeID">@r.RecipeName</a>
+            </td>
+            <td>
+                @r.Description
+            </td>
+            <td></td>
+</tr>
+        }
+    </tbody>
+</table>

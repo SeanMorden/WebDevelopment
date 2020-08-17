@@ -1,0 +1,45 @@
+﻿@model Recipe
+@{ 
+    ViewBag.Title = "Add Recipe";
+    ViewBag.Header = "Add Recipe";
+}
+<form asp-action="Edit" method="post">
+    <input asp-for="RecipeID" type="hidden" />
+    <table>
+        <tr>
+            <td>
+                Recipe Name:
+            </td>
+            <td>
+                <input asp-for="RecipeName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Description:
+            </td>
+            <td>
+                <textarea input class="textbox" asp-for="Description"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ingredients:
+            </td>
+            <td>
+                <textarea input class="textbox" asp-for="Ingredients"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Instructions:
+            </td>
+            <td>
+                <textarea input class="textbox" asp-for="Instructions"></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <button type="submit">Save</button> | <button asp-controller="Home" asp-action="RecipeList">Cancel</button>
+
+</form>
