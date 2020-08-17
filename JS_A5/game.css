@@ -1,0 +1,35 @@
+/*
+			Student:Sean Morden
+			Student#:300490950
+			Assignment 5
+			Filename: index.html
+*/
+
+body{
+	background-image:url("space.jpeg");
+	background-color:black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	color:#003D6B;
+}
+h1{
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	font-size:40px;
+}
+/*canvas{
+	position: fixed;
+	top:23%;
+	left:40%;
+}*/
+.thisBody{
+	width:400px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.inline{
+	display: inline-flex;
+	padding:10px;
+}
+
