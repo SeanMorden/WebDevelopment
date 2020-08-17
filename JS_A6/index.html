@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Student:Sean Morden
+            Student#:300490950
+            Filename:index.html
+            Assignment 6 - Image Gallery Ajax
+        -->
+        <title>Photo Gallery</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="gallery.css" />
+        <link rel="icon" type="image" href="images/titleImage.png">
+
+    </head>
+        <body>
+            <div id="main">
+                    <h1 class="blackText">Show Cows Image Gallery</h1>
+                <div id="photoGallery">
+                    <div id="last" style="width:300px;height:250px;"> 
+                        <img src="images/06.jpg" id="lastImage" style="width:275px;height:225px;">
+                    </div>
+                    <div id="next" style="width:300px;height:250px;">
+                            <img src="images/02.jpg" id="nextImage" style="width:275px;height:225px;">
+                    </div>
+                    <div id="current" style="width:325px;height:275px;">
+                            <img src="images/01.jpg" id="currentImage" style="width:325px;height:275px;">
+                    </div>
+                    <div id="btnLast" class="buttons"><p>&lt</p></div>
+                    <div id="btnNext" class="buttons"><p>&gt</p></div>
+                    
+                </div>
+                <button id="loadButton">Click To Load Images</button>
+            </div>
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script src="gallery.js"></script>
+        </body>
+</html>

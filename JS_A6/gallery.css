@@ -1,0 +1,88 @@
+        /*
+            Student:Sean Morden
+            Student#:300490950
+            Filename: gallery.css
+            Assignment 6 - Image Gallery Ajax
+        */
+html{
+    background-color: black
+}
+#main{
+    background-color:mediumaquamarine;
+    width:900px;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.blackText{
+    color: black;
+    width:900px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+#photoGallery{
+    position: absolute;
+    width:890px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+#last{
+    position: absolute;
+    top: 50px;
+    left:100px;
+    border: solid 5px black ;
+}
+#next{
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    margin-left:500px;
+    border: solid 5px black ;
+}
+#current{
+    position: absolute;
+    margin-top: 40px;
+    display: block;
+    margin-left:300px;
+    border: solid 5px black ;
+}
+#lastImage{
+    margin-top:12px;
+    margin-left:8px;
+}
+#nextImage{
+    margin-top:12px;
+    margin-left:15px;
+}
+
+#loadButton{
+    position:absolute;
+    margin-bottom:0px;
+    margin-left:380px;
+    top:550px;
+    height:40px;}
+
+.buttons{
+    font-size:40px;
+    color:mediumaquamarine;
+    font-style:bold;
+    background-color:black;
+}
+.buttons:hover{
+    color:black;
+    background-color:white;
+    cursor: default;
+}
+#btnLast{
+    position: absolute;
+    left:0px;
+    margin-top:150px;
+}
+#btnNext{
+    position: absolute;
+    right:0px;
+    margin-top:150px;
+}

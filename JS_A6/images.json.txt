@@ -1,0 +1,35 @@
+{
+    "pictures" : [
+        {
+            "name":"Cow1",
+            "path":"images/01.jpg",
+            "time":"6000"
+        },
+        {
+            "name":"Cow2",
+            "path":"images/02.jpg",
+            "time":"6000"
+        },
+        {
+            "name":"Cow3",
+            "path":"images/03.jpg",
+            "time":"6000"
+        },
+        {
+            "name":"Cow4",
+            "path":"images/04.jpg",
+            "time":"6000"
+        },
+        {
+            "name":"Cow5",
+            "path":"images/05.jpg",
+            "time":"6000"
+        },
+        {
+            "name":"Cow6",
+            "path":"images/06.jpg",
+            "time":"6000"
+        }
+        
+    ]
+}
